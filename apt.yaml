@@ -2,6 +2,7 @@
 - hosts: ubuntu
   become: true
   tasks:
+  ansible_python_interpreter: /usr/bin/python3
   - name: Update and upgrade apt packages
     apt:
       upgrade: yes
